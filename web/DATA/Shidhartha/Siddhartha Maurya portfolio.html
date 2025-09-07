@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Portfolio</title>
+    <style>
+      body {
+        background: #a9a9a9;
+        font-family: Georgia, serif;
+        margin: 20px;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+      }
+      .row {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .left {
+        flex: 1;
+      }
+      .right {
+        width: 260px;
+      }
+      table {
+        font-size: 18px;
+        border-collapse: collapse;
+      }
+      td.label {
+        width: 200px;
+        font-weight: bold;
+        color: #2e2e2e;
+      }
+      td.colon {
+        width: 12px;
+        text-align: center;
+        font-weight: bold;
+      }
+      img.photo {
+        width: 50%;
+        border: 4px solid #222;
+        display: block;
+      }
+      .desc {
+        margin-top: 18px;
+        font-size: 16px;
+      }
+      @media (max-width: 700px) {
+        .row {
+          flex-direction: column;
+        }
+        .right {
+          width: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Portfolio</h1>
+
+      <div class="row">
+        <div class="left">
+          <table>
+            <tr>
+              <td class="label">Name</td>
+              <td class="colon">:</td>
+              <td>Siddhartha Maurya</td>
+            </tr>
+            <tr>
+              <td class="label">Mother's name</td>
+              <td class="colon">:</td>
+              <td>Radha Maurya</td>
+            </tr>
+            <tr>
+              <td class="label">Father's name</td>
+              <td class="colon">:</td>
+              <td>Ram Pujan Maurya</td>
+            </tr>
+            <tr>
+              <td class="label">Year</td>
+              <td class="colon">:</td>
+              <td>3rd</td>
+            </tr>
+            <tr>
+              <td class="label">Branch</td>
+              <td class="colon">:</td>
+              <td>Information Technology</td>
+            </tr>
+            <tr>
+              <td class="label">Institute</td>
+              <td class="colon">:</td>
+              <td>Rajkiya Engineering College, Bijnor</td>
+            </tr>
+            <tr>
+              <td class="label">Contact No.</td>
+              <td class="colon">:</td>
+              <td>6307648930</td>
+            </tr>
+            <tr>
+              <td class="label">Email id</td>
+              <td class="colon">:</td>
+              <td>siddhartha.it.23062.@recb.ac.in</td>
+            </tr>
+            <tr>
+              <td class="label">Address</td>
+              <td class="colon">:</td>
+              <td>
+                Vill-Ramnagar; Post- Vishasharganj, Distt- basti, Uttar Pradesh
+              </td>
+            </tr>
+          </table>
+
+          <div class="desc">
+            <strong>Description :</strong>
+            <p>
+              My name is Siddhartha Maurya. I am a B.Tech 3rd year student in
+              Information Technology at Rajkiya Engineering College, Bijnor. My
+              hobbies are playing games and playing Chess.
+            </p>
+          </div>
+        </div>
+
+        <div class="right">
+          <img class="photo" src="Siddhartha.jpg" alt="Photo" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

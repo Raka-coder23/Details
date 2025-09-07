@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shumayala Ansari - Professional Biodata</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f3f6fb;
+      margin: 0;
+      padding: 50px 15px;
+      color: #2c3e50;
+    }
+    .container {
+      max-width: 760px;
+      margin: auto;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      overflow: hidden;
+    }
+    .header {
+      background: linear-gradient(135deg, #0052d4, #4364f7, #6fb1fc);
+      color: #fff;
+      text-align: center;
+      padding: 40px 30px 50px;
+      letter-spacing: 1.2px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 38px;
+      /* text-transform: uppercase; */ /* Removed to show name as typed */
+      letter-spacing: 2px;
+      line-height: 1.2;
+    }
+    .header p {
+      margin-top: 12px;
+      font-weight: 500;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    .section {
+      padding: 35px 40px;
+      border-bottom: 1px solid #e4e9f2;
+    }
+    .section:last-child {
+      border-bottom: none;
+    }
+    .section h2 {
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 20px;
+      position: relative;
+      color: #4364f7;
+    }
+    .section h2::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 70px;
+      height: 3px;
+      background: #6fb1fc;
+      border-radius: 3px;
+    }
+    /* For Personal Information section */
+    .info p {
+      font-size: 16.5px;
+      margin-bottom: 15px;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+    }
+    .info p span.label {
+      font-weight: 700;
+      color: #555a77;
+      display: inline-block;
+      width: 140px;
+      flex-shrink: 0;
+    }
+    /* For Educational Qualification section */
+    .education p {
+      font-size: 16.5px;
+      margin-bottom: 15px;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+    }
+    .education p span.label {
+      font-weight: 700;
+      color: #555a77;
+      display: inline-block;
+      width: 140px;
+      flex-shrink: 0;
+    }
+    .section ul {
+      list-style-type: disc;
+      padding-left: 25px;
+      font-size: 16.5px;
+      color: #34495e;
+    }
+    .section ul li {
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .contact {
+      background: #f7faff;
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 15px;
+      color: #718093;
+      letter-spacing: 0.6px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+    .contact strong {
+      color: #4364f7;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px 10px;
+      }
+      .header h1 {
+        font-size: 28px;
+      }
+      .section h2 {
+        font-size: 20px;
+      }
+      .info p span.label,
+      .education p span.label {
+        width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Shumayala Ansari</h1>
+      <p>B.Tech (Information Technology)</p>
+      <p>Rajkiya Engineering College, Bijnor</p>
+    </div>
+
+    <div class="section info">
+      <h2>Personal Information</h2>
+      <p><span class="label">Date of Birth:</span> 01-08-2005</p>
+      <p><span class="label">Age:</span> 20 years</p>
+      <p><span class="label">Gender:</span> Female</p>
+      <p><span class="label">Languages Known:</span> English, Hindi, Urdu</p>
+      <p><span class="label">Address:</span> Village Saktalpur Milak, Post Rasoolpur Nangla, Tehsil Chandpur, District Bijnor, Uttar Pradesh</p>
+    </div>
+
+    <div class="section education">
+      <h2>Educational Qualification</h2>
+      <p><span class="label">B.Tech (IT):</span> Rajkiya Engineering College, Bijnor (Pursuing)</p>
+      <p><span class="label">12th:</span> Aadharshila 'The School'</p>
+      <p><span class="label">10th:</span> Himalayan Academy</p>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>C Language</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Hobbies & Interests</h2>
+      <ul>
+        <li>Reading & Writing</li>
+        <li>Painting & Crafting</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

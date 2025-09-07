@@ -1,0 +1,63 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic {
+    width: 130px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #222;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #444;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 4px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: square;
+    margin-left: 20px;
+  }
+  
+  p {
+    margin: 6px 0;
+  }
+  
+  

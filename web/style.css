@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#nav-outer{
+    height: 20vh;
+    width: 100vw;
+    border: 1px solid black;
+    
+    display: flex;
+
+}
+
+#nav-in1{
+    height: 100%;
+    width: 15%;
+    
+    overflow:hidden;
+    background-image: url('recblogo.jpeg');
+    background-size: 80%;
+    background-repeat:no-repeat;
+
+    
+}
+
+#nav-in2{
+    height: 100%;
+    width: 100%;
+
+  
+}
+#nav-about{
+    height: 49%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+}
+#nav-about h1{
+    color:rgb(0, 208, 255);
+}
+#nav-main{
+    height: 49%;
+    width: 90%;
+    border: 1px solid black;
+color:#f5a819;
+  
+}
+#nav-about p{
+    font-weight: 100;
+}
+
+#nav-about button{
+    height: 50%;
+    width: 15vh;
+    background-color:hsl(0, 94%, 53%);
+    border-radius: 5px;
+    
+    
+}
+
+#nav-main{
+    display: flex;
+    background-color:#232F3E;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+/*  Group css*/
+.DetailMain{
+  display: flex;
+ 
+}
+.G{
+  padding-top: 20px;
+  width: 50%;
+  padding-left: 40px;
+  border: 1px solid rgb(136, 230, 136);
+}
+.G h2{
+  color: rgb(207, 52, 50);
+}
+
+.G li{
+  font-size:1.1rem;
+  padding-top: 10px;
+  padding-left: 3px;
+}
+.headTitle{
+  color: rgb(0, 208, 255);
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.outer-foot{
+    height: 17vh;
+    width: 100vw;
+   display: flex;
+   justify-content: center;
+  padding-top: 3vw;
+  
+  
+}
+
+
+.iner-foot{
+    height: 17vh;
+    width: 100%;
+    padding-top: 3vh;
+    background-color: #232F3E;
+   
+    padding-left: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3vh;
+}
+
+.foot{
+    height:18vh;
+    width:21vw;
+    position: relative;
+    color: aliceblue;
+}
+.foot h4{
+    color:#ffbb38;
+    font-size: 0.8em;
+}
+.foot a{
+    margin-top: 15px;
+    font-size: .8em;
+}
+.foot li{
+    text-decoration: dotted;
+    color: chocolate;
+    font-size: 1.1rem;
+}
+
+
+
+@media (max-width:600px) {
+
+    #nav-outer{
+        height:15vw;
+    }
+    #nav-about {
+        font-size:0.4rem;
+    }
+    #nav-about button {
+        font-size:0.4rem;
+        width: 15vw;
+    }
+    #nav-main{
+        font-size: 0.4rem;
+    }
+    #nav-main input{
+        font-size: 0.5rem;
+        size: 15%;
+    }
+
+    .DetailMain{
+  
+ flex-direction: column;
+}
+.G{
+
+  width: 100%;
+ 
+}
+.headTitle{
+  font-size: 0.7rem;
+}
+    .foot{
+    
+        width: 49%;
+        gap: 20px;
+    }
+    .foot h4{
+        
+        font-size: 0.4em;
+    }
+    .foot a{
+        margin-top: 15px;
+        font-size: .4em;
+    }
+    .foot li{
+        text-decoration: dotted;
+        color: chocolate;
+        font-size: 0.6em;
+    }
+    .outer-foot{
+        height:20vh;
+        
+   
+}
+}

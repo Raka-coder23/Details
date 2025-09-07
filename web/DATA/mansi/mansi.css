@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #4a90e2, #0072ff);
+  color: white;
+  text-align: center;
+  padding: 50px 20px 80px;
+  position: relative;
+}
+.header h1 {
+  margin: 10px 0;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.header p {
+  margin: 5px 0;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Profile Image */
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.profile img {
+  width: 180px;
+  height: 220px;
+  border-radius: 15px;   /* use 50% for a circle */
+  border: 5px solid white;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  object-fit: cover;     /* keeps best fit */
+  object-position: center;
+  background: #fff;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Card Style */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+.card h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #0072ff;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+ul li strong {
+  color: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #0072ff;
+  color: white;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+  .header h1 {
+    font-size: 28px;
+  }
+  .profile img {
+    width: 140px;
+    height: 180px;
+  }
+}

@@ -1,0 +1,148 @@
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mansi - Portfolio</title>
+  <link rel="stylesheet" href="mansi.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      margin: 0;
+    }
+    .profile {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+    .accordion {
+      background-color: #0077b6;
+      color: white;
+      cursor: pointer;
+      padding: 14px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      margin: 5px 0;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .accordion:hover {
+      background-color: #023e8a;
+    }
+    .panel {
+      padding: 0 15px;
+      display: none;
+      background: white;
+      overflow: hidden;
+      border-radius: 0 0 5px 5px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .panel ul {
+      list-style: none;
+      padding: 10px;
+    }
+    .panel li {
+      margin: 5px 0;
+    }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background: #0077b6;
+      color: white;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h1>Mansi</h1>
+    <p>B.Tech (Information Technology) Student</p>
+    <p>Rajkiya Engineering College, Bijnor</p>
+  </div>
+
+  <!-- Profile -->
+  <div class="profile">
+    <img src="mansi.jpg" alt="Mansi Profile Photo">
+  </div>
+
+  <!-- Accordion Sections -->
+  <button class="accordion">Personal Details</button>
+  <div class="panel">
+    <ul>
+      <li><strong>Date of Birth:</strong> 30/12/2006</li>
+      <li><strong>Contact:</strong> 8533835290</li>
+      <li><strong>Email:</strong> <a href="mailto:mansi.it.23038@recb.ac.in">mansi.it.23038@recb.ac.in</a></li>
+      <li><strong>Address:</strong> Bijnor, Uttar Pradesh</li>
+    </ul>
+  </div>
+
+  <button class="accordion">Academic Details</button>
+  <div class="panel">
+    <ul>
+      <li><strong>Currently Pursuing:</strong> B.Tech (Information Technology)</li>
+      <li><strong>College:</strong> Rajkiya Engineering College, Bijnor</li>
+      <li><strong>12th:</strong> YPIC School with 78%</li>
+      <li><strong>10th:</strong> YPIC School with 84%</li>
+    </ul>
+  </div>
+
+  <button class="accordion">Technical Skills</button>
+  <div class="panel">
+    <ul>
+      <li><strong>Languages:</strong> C, Python</li>
+      <li><strong>Web Technologies:</strong> HTML, CSS</li>
+      <li><strong>Tools:</strong> Canva, MATLAB, Visual Studio Code</li>
+    </ul>
+  </div>
+
+  <button class="accordion">Achievements</button>
+  <div class="panel">
+    <ul>
+      <li>Certified in MATLAB</li>
+      <li>First position in essay writing competition (Class 10th)</li>
+      <li>Second position in debate competition (Class 11th)</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Mansi | Portfolio
+  </footer>
+
+  <!-- JavaScript for Accordion -->
+  <script>
+    const acc = document.querySelectorAll(".accordion");
+    acc.forEach(button => {
+      button.addEventListener("click", function () {
+        this.classList.toggle("active");
+
+        let panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

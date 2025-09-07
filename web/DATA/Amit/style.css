@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  overflow-x: hidden;
+  perspective: 1000px;
+}
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid white;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #00c6ff;
+  font-weight: 600;
+}
+.social-links a:hover {
+  color: #00ffff;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  transform-style: preserve-3d;
+}
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: rotateY(0deg) rotateX(0deg);
+}
+.card:hover {
+  transform: rotateY(10deg) rotateX(10deg);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+.card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+.card p {
+  opacity: 0.85;
+}
+.btn {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  background: #00c6ff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #0072ff;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0,0,0,0.2);
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
