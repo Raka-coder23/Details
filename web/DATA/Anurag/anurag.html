@@ -1,0 +1,209 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anurag Gautam – Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    background:#f0f2f5;
+    color:#333;
+    line-height:1.6;
+}
+a { text-decoration:none; color:#4a90e2; transition:0.3s; }
+a:hover { color:#ff6b6b; }
+
+/* Fixed Navbar */
+nav {
+    padding:15px 0;
+    background:#fff;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+nav a {
+    margin:0 20px;
+    font-weight:700;
+}
+nav a:hover { text-decoration:underline; }
+
+/* Container */
+.container { width:90%; max-width:1000px; margin:140px auto 50px auto; }
+
+/* Sections with aesthetic card style */
+section {
+    margin-bottom:30px;
+    padding:40px 30px;
+    border-radius:15px;
+    background:#fff;
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+section:hover {
+    transform: translateY(-8px);
+    box-shadow:0 16px 32px rgba(0,0,0,0.12);
+}
+
+h1,h2 { margin-bottom:15px; }
+h1 { text-align:center; font-size:2.8em; }
+h2 { font-size:1.8em; border-bottom:2px solid #4a90e2; padding-bottom:8px; margin-bottom:20px; }
+
+ul { padding-left:20px; }
+
+/* Skill bars */
+.skill-bar { background:#e0e0e0; border-radius:25px; height:25px; margin:10px 0; overflow:hidden; }
+.skill-fill { width:0%; height:100%; background:#4a90e2; text-align:right; padding-right:10px; line-height:25px; color:#fff; font-weight:bold; transition:width 2s ease-in-out; }
+
+/* Projects grid */
+.projects { display:grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap:20px; }
+.project-card {
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 8px 16px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+    transform:translateY(-5px);
+    box-shadow:0 16px 32px rgba(0,0,0,0.12);
+}
+
+/* Back to top button */
+#topBtn {
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    display:none;
+    background:#4a90e2;
+    color:#fff;
+    border:none;
+    padding:10px 15px;
+    border-radius:50px;
+    cursor:pointer;
+    font-weight:bold;
+}
+#topBtn:hover { background:#ff6b6b; }
+
+/* Responsive */
+@media(max-width:600px){
+    h1{font-size:2em;} section{padding:25px;} nav a{margin:10px 5px;}
+    .projects { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- Fixed Navbar -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#extracurricular">Extra</a>
+</nav>
+
+<div class="container">
+
+    <!-- About Me -->
+    <section id="about">
+        <h1>Anurag Gautam</h1>
+        <p style="text-align:center;">
+            Email: <a href="mailto:anurag1234gautam@gmail.com">anurag1234gautam@gmail.com</a> | 
+            GitHub: <a href="https://github.com/anurag0x0">anurag0x0</a> | 
+            LinkedIn: <a href="https://www.linkedin.com/in/anurag-gautam-35675a378">Profile</a>
+        </p>
+        <p>
+            I am Anurag Gautam, a B.Tech Information Technology student at Dr. A.P.J. Abdul Kalam Technical University. I have hands-on experience in SQL, Python, Power BI, Tableau, and Excel. I have worked on projects such as Monster India Dashboard and Pizza Sales Dashboard using SQL. Passionate about data analysis, visualization, and problem-solving, I aim to apply my technical skills to real-world projects, contribute effectively to organizations, and continuously enhance my professional expertise.
+        </p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Dr. A.P.J. Abdul Kalam Technical University</strong> – Uttar Pradesh, India</p>
+        <p>B.Tech in Information Technology (2023 – 2027)</p>
+        <ul>
+            <li>Among the top 5 of the batch</li>
+        </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <p>SQL</p><div class="skill-bar"><div class="skill-fill" data-width="90%">90%</div></div>
+        <p>Python</p><div class="skill-bar"><div class="skill-fill" data-width="85%">85%</div></div>
+        <p>Power BI / Tableau</p><div class="skill-bar"><div class="skill-fill" data-width="80%">80%</div></div>
+        <p>MS-Excel</p><div class="skill-bar"><div class="skill-fill" data-width="95%">95%</div></div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Data Analysis Dashboard – Monster India</h3>
+                <p>Organized time-series data using Excel and created dashboards for reporting.</p>
+                <p>Result: Improved accuracy of insights and simplified reporting.</p>
+            </div>
+            <div class="project-card">
+                <h3>Pizza Sales Dashboard Analysis using SQL</h3>
+                <p>Analyzed pizza sales data to derive insights on top-selling products and revenue trends.</p>
+                <p>Result: Created interactive dashboards and showcased project on LinkedIn.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Man of the Match – College Cricket Series</li>
+            <li>Man of the Match – College Volleyball Tournament</li>
+        </ul>
+    </section>
+
+    <!-- Extra-Curricular -->
+    <section id="extracurricular">
+        <h2>Extra-Curricular Activities</h2>
+        <ul>
+            <li>Member of Coding Club and Tech Workshops</li>
+            <li>Volunteer for college events and community initiatives</li>
+        </ul>
+    </section>
+
+</div>
+
+<button id="topBtn" onclick="topFunction()">↑</button>
+
+<script>
+// Animate skill bars
+const skillFills = document.querySelectorAll('.skill-fill');
+window.addEventListener('scroll', () => {
+    skillFills.forEach(fill => {
+        if(fill.getBoundingClientRect().top < window.innerHeight){
+            fill.style.width = fill.getAttribute('data-width');
+        }
+    });
+});
+
+// Back to top button
+const topBtn = document.getElementById("topBtn");
+window.onscroll = function() {
+    if(document.body.scrollTop>200 || document.documentElement.scrollTop>200){
+        topBtn.style.display="block";
+    } else { topBtn.style.display="none"; }
+};
+function topFunction(){ window.scrollTo({top:0, behavior:'smooth'}); }
+</script>
+
+</body>
+</html>
